@@ -702,7 +702,7 @@ footer{background:var(--marrom);color:#e6dfd3;padding:58px 0 40px;font-size:14.5
 /* ================= EDITE AQUI ================= */
 const WHATS = "5511944938336";
 const INSTAGRAM = "https://www.instagram.com/giuliadantas.oficial/";
-const MENSAGEM = "Olá, Giulia! Vi o seu site e gostaria de conversar sobre a consultoria de imagem. 💛";
+const MENSAGEM = "Olá, Giulia! Vi o seu site e gostaria de conversar sobre a consultoria de imagem.";
 /* Depoimentos REAIS. Enquanto estiver vazio, a seção não aparece.
    Exemplo: {texto:"...", nome:"Nome", info:"Serviço contratado"} */
 const depoimentos = [];
@@ -714,7 +714,7 @@ const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
 // links de contato
 $$('[data-wpp]').forEach(a=>{
   const s=a.dataset.wpp;
-  const msg=s?`Olá, Giulia! Vi o seu site e tenho interesse em: ${s}. 💛`:MENSAGEM;
+  const msg=s?`Olá, Giulia! Vi o seu site e tenho interesse em: ${s}.`:MENSAGEM;
   a.href=`https://wa.me/${WHATS}?text=${encodeURIComponent(msg)}`;a.target='_blank';a.rel='noopener';
 });
 $$('[data-ig]').forEach(a=>a.href=INSTAGRAM);
