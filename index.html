@@ -99,16 +99,16 @@ nav a:hover::after{transform:scaleX(1)}
 .hero-meta svg{width:17px;height:17px;color:var(--gold-d)}
 .hv{position:relative;width:min(440px,100%);margin-inline:auto;perspective:1000px}
 .hv-frame{position:absolute;inset:-18px 18px 18px -18px;border:1px solid var(--gold);border-radius:26px;opacity:0;animation:fin 1.4s var(--ease) .9s forwards}
-.hv-art{position:relative;aspect-ratio:4/5;transition:transform .25s ease-out;transform-style:preserve-3d;clip-path:inset(-46% 0 0 0 round 0 0 22px 22px);opacity:0;animation:fin 1.2s var(--ease) .4s forwards}
+.hv-art{position:relative;aspect-ratio:1/1;transition:transform .25s ease-out;transform-style:preserve-3d;clip-path:inset(-30% -4% 0 -4% round 0 0 22px 22px);opacity:0;animation:fin 1.2s var(--ease) .4s forwards}
 .hv-panel{position:absolute;inset:0;border-radius:22px;overflow:hidden;background:linear-gradient(165deg,#EEE3D2,#E8DCCB 55%,#DDCCB1);border:1px solid var(--line);box-shadow:var(--shadow)}
 .hv-panel::before,.hv-panel::after{content:"";position:absolute;border:1px solid rgba(166,124,69,.38);border-radius:26px}
 .hv-panel::before{width:62%;height:48%;left:-18%;bottom:-8%;transform:rotate(-12deg)}
 .hv-panel::after{width:54%;height:42%;right:-16%;top:10%;transform:rotate(14deg)}
-.hv-art img{position:absolute;left:50%;bottom:0;width:126%;max-width:none;height:auto;transform:translateX(-50%);opacity:0;animation:pop 1.6s var(--ease) .5s forwards;filter:drop-shadow(0 22px 28px rgba(53,37,31,.18))}
+.hv-art img{position:absolute;left:50%;bottom:0;width:100%;max-width:none;height:auto;transform:translateX(-50%);opacity:0;animation:pop 1.6s var(--ease) .5s forwards;filter:drop-shadow(0 22px 28px rgba(53,37,31,.18))}
 @keyframes pop{from{opacity:0;transform:translateX(-50%) translateY(36px) scale(1.04)}to{opacity:1;transform:translateX(-50%)}}
 .chip{position:absolute;z-index:3;display:flex;align-items:center;gap:10px;padding:12px 18px;background:rgba(247,244,239,.9);backdrop-filter:blur(10px);border:1px solid var(--line);border-radius:var(--r-sm);font-size:12.5px;letter-spacing:.08em;color:var(--marrom);box-shadow:0 18px 34px -20px rgba(53,37,31,.5);animation:float 6s ease-in-out infinite}
 .chip svg{width:18px;height:18px;color:var(--gold-d)}
-.chip.c1{right:-7%;bottom:15%}
+.chip.c1{right:-7%;bottom:18%}
 .chip.c2{right:-3%;bottom:4%;animation-delay:-3s}
 @keyframes float{50%{transform:translateY(-10px)}}
 
@@ -405,7 +405,7 @@ footer{background:var(--marrom);color:#e6dfd3;padding:58px 0 40px;font-size:14.5
     </div>
     <div class="hv" id="hv" data-par="0.04">
       <div class="hv-frame"></div>
-      <figure class="hv-art" id="hvArt"><div class="hv-panel"></div><img src="giulia-hero.webp" alt="Giulia Dantas, consultora de imagem e coloração pessoal" width="1254" height="1254" fetchpriority="high"></figure>
+      <figure class="hv-art" id="hvArt"><div class="hv-panel"></div><img src="giulia-hero.webp" alt="Giulia Dantas, consultora de imagem e coloração pessoal" width="1069" height="1080" fetchpriority="high"></figure>
       <div class="chip c1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-7-4.400-7-10a4 4 0 017-2.600A4 4 0 0119 10c0 5.600-7 10-7 10z"/></svg>Consultoria de imagem</div>
       <div class="chip c2"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="4"/><path d="M9 12h6M12 9v6"/></svg>Coloração pessoal</div>
     </div>
